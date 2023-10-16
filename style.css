@@ -55,6 +55,7 @@ main {
 
 .section1 {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 30px;
 }
@@ -94,5 +95,9 @@ footer {
 @media screen and (min-width: 568px) {
   .catGrid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .section1 {
+    flex-direction: unset;
   }
 }
